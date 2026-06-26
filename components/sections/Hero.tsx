@@ -10,9 +10,9 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1600&q=80"
+        src="https://images.unsplash.com/photo-1488521787991-3873519a4bfd?w=1600&q=80"
         // TODO: Replace with actual PCI photography
-        alt="Volunteers and community members at a Park City Initiative event in Bridgeport"
+        alt="Volunteers distributing food to families in an urban community setting"
         fill
         priority
         className="object-cover"
