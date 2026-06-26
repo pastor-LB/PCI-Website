@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/copy-of-what-we-do", "destination": "/our-impact", "permanent": true },
+    { "source": "/ourstory", "destination": "/our-story", "permanent": true },
+    { "source": "/onemeal", "destination": "/one-meal", "permanent": true },
+    { "source": "/onechild", "destination": "/one-child", "permanent": true },
+    { "source": "/oneblock", "destination": "/one-block", "permanent": true },
+    { "source": "/get-involved", "destination": "/volunteer", "permanent": true },
+    { "source": "/communitybulletinboard", "destination": "/contact", "permanent": true }
+  ]
+}
