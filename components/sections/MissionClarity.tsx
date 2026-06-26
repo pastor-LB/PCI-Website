@@ -8,9 +8,9 @@ export default function MissionClarity() {
       <div className="grid items-center gap-10 lg:grid-cols-2">
         <div className="relative h-72 overflow-hidden rounded-2xl shadow-lg sm:h-96">
           <Image
-            src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=900&q=80"
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80"
             // TODO: Replace with actual PCI photography
-            alt="Volunteers packing food boxes for Bridgeport families"
+            alt="Happy diverse children smiling together in an urban community setting"
             fill
             className="object-cover"
           />
