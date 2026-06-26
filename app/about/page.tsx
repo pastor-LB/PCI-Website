@@ -43,6 +43,10 @@ export default function AboutPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
+        <p className="mx-auto max-w-3xl text-center text-brand-gray mb-12">
+          For 27 years, Park City Initiative has been a steady presence in Bridgeport — meeting immediate needs while building a vision of thriving families and resilient neighborhoods. From our roots as a single food pantry to today's integrated programs serving youth, seniors, and entire blocks, we remain committed to the founding principle: that one person's request for help can spark a movement.
+        </p>
+
         <div className="grid gap-8 sm:grid-cols-2">
           <Card borderColor="gold">
             <h2 className="font-heading text-2xl font-semibold text-brand-purple">Our Mission</h2>
@@ -72,7 +76,7 @@ export default function AboutPage() {
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full bg-brand-gray-light">
                 {/* TODO: Replace with actual PCI photography */}
               </div>
-              <p className="mt-4 font-semibold text-brand-charcoal">{person.name}</p>
+              <h3 className="mt-4 font-semibold text-brand-charcoal">{person.name}</h3>
               <p className="text-sm text-brand-gray">{person.role}</p>
             </div>
           ))}

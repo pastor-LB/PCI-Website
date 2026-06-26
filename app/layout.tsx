@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
+  robots: process.env.VERCEL_ENV === "production" ? undefined : "noindex, nofollow",
+  alternates: {
+    canonical: SITE.url,
+    languages: {
+      en: `${SITE.url}/`,
+      "es-US": `${SITE.url}/es`,
+    },
+  },
   openGraph: {
     title: SITE.name,
     description: SITE.description,

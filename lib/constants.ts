@@ -60,7 +60,7 @@ export const NAV_LINKS = [
     children: [
       { label: "Donate", href: "/donate" },
       { label: "Volunteer", href: "/volunteer" },
-      { label: "Walk-A-Thon 2026", href: "/walk-a-thon" },
+      { label: "Walk-A-Thon", href: "/walk-a-thon" },
     ],
   },
 ] as const;

@@ -3,25 +3,28 @@ import { SITE } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Ayuda con Alimentos en Bridgeport CT",
+  title: "Ayuda con Alimentos en Bridgeport CT — Park City Initiative",
   description:
     "Park City Initiative ofrece asistencia alimentaria, programas juveniles y apoyo comunitario en Bridgeport, CT.",
   alternates: {
     canonical: `${SITE.url}/es`,
     languages: {
       en: `${SITE.url}/`,
+      "es-US": `${SITE.url}/es`,
       es: `${SITE.url}/es`,
     },
   },
   openGraph: {
-    title: "Ayuda con Alimentos en Bridgeport CT | Park City Initiative",
+    title: "Ayuda con Alimentos en Bridgeport CT — Park City Initiative",
     description:
       "Park City Initiative ofrece asistencia alimentaria, programas juveniles y apoyo comunitario en Bridgeport, CT.",
     url: `${SITE.url}/es`,
     locale: "es_US",
+    type: "website",
   },
   twitter: {
-    title: "Ayuda con Alimentos en Bridgeport CT | Park City Initiative",
+    card: "summary_large_image",
+    title: "Ayuda con Alimentos en Bridgeport CT — Park City Initiative",
     description:
       "Park City Initiative ofrece asistencia alimentaria, programas juveniles y apoyo comunitario en Bridgeport, CT.",
   },

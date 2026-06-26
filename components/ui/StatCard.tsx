@@ -53,7 +53,8 @@ export default function StatCard({
     ? value.slice((numericMatch.index ?? 0) + numericMatch[0].length)
     : value;
 
-  const count = useCountUp(numericTarget ?? 0, inView);
+  const animatedCount = useCountUp(numericTarget ?? 0, inView);
+  const displayCount = inView ? animatedCount : (numericTarget ?? 0);
 
   const isGold = variant === "gold-on-dark";
 
@@ -78,7 +79,7 @@ export default function StatCard({
           isGold ? "text-brand-gold" : "text-brand-purple"
         }`}
       >
-        {numericTarget !== null ? `${prefix}${count.toLocaleString()}${suffix}` : value}
+        {numericTarget !== null ? `${prefix}${displayCount.toLocaleString()}${suffix}` : value}
       </span>
       <span className={`mt-1 text-sm sm:text-base ${isGold ? "text-white" : "text-brand-gray"}`}>
         {label}
