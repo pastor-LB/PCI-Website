@@ -57,6 +57,41 @@ export default function OurStoryPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       <Section background="white">
+        <div className="mx-auto max-w-3xl mb-12">
+          <h2 className="text-3xl font-bold text-brand-purple mb-6">
+            One Request. 27 Years. One Million Meals.
+          </h2>
+          <div className="space-y-4 text-lg text-brand-gray">
+            <p>
+              In 1999, Bishop Jean Williams made a simple request to her daughter, Mary Green:
+              <span className="font-semibold text-brand-charcoal"> "Help me feed the hungry families in our city."</span>
+              That conversation sparked a movement that has transformed Bridgeport.
+            </p>
+            <p>
+              What began as one woman's compassion for her neighbors has grown into a comprehensive,
+              multi-program organization serving thousands of families annually. From the Bishop Jean Williams
+              Food Pantry to youth development programs like S.C.A.M.P. and Kidz Academy, to community
+              transformation through Adopt-A-Block initiatives—Park City Initiative has become a
+              <span className="font-semibold text-brand-charcoal"> trusted cornerstone of Bridgeport's social fabric.</span>
+            </p>
+            <p>
+              Today, we serve over 900+ families every week, distribute 1 million+ meals annually,
+              provide education and mentorship to hundreds of young people, and actively transform
+              entire city blocks through volunteer action. Yet our mission remains unchanged:
+              <span className="font-semibold text-brand-purple"> to meet basic needs today, restore hope for tomorrow,
+              and transform lives forever.</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-200 pt-12">
+          <h2 className="text-2xl font-bold text-brand-purple mb-8 text-center">
+            Our 27-Year Journey
+          </h2>
+        </div>
+      </Section>
+
+      <Section background="gray-light">
         <StoryTimeline milestones={milestones} />
       </Section>
 

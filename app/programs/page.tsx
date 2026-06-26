@@ -24,25 +24,43 @@ const breadcrumbItems = [
 const programs = [
   {
     title: "One Meal",
-    subtitle: "Food Pantry",
+    subtitle: "Food Pantry & Senior Support",
     description:
       "The Bishop Jean Williams Food Pantry, Senior Care Boxes, and Mobile Pantry deliver free, nutritious food to families and seniors across Bridgeport.",
+    details: [
+      "1,000,000+ meals distributed annually",
+      "900+ families served weekly",
+      "5,650 senior care boxes delivered yearly",
+      "3 distribution channels (walk-in, drive-thru, mobile)",
+    ],
     image: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b1?w=900&q=80",
     href: "/one-meal",
   },
   {
     title: "One Child",
-    subtitle: "Youth Development",
+    subtitle: "Youth Development & Education",
     description:
       "Park City Kidz Academy, Kidz Mobile, and S.C.A.M.P. give children life-skills training, mentorship, and a safe place to learn and grow.",
+    details: [
+      "220+ children in life-skills training programs",
+      "After-school tutoring & mentorship",
+      "S.C.A.M.P. free summer camp for all ages",
+      "College prep & career readiness support",
+    ],
     image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=900&q=80",
     href: "/one-child",
   },
   {
     title: "One Block",
-    subtitle: "Community Leadership",
+    subtitle: "Community Transformation & Leadership",
     description:
       "Park City Youth ACTS, Adopt-A-Block, and career readiness training empower young leaders to transform their own neighborhoods.",
+    details: [
+      "Community-led neighborhood cleanup initiatives",
+      "Youth leadership training programs",
+      "Job readiness & employment pathways",
+      "Volunteer-powered block transformation",
+    ],
     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80",
     href: "/one-block",
   },
@@ -65,6 +83,20 @@ export default function ProgramsPage() {
         tall
       />
       <Breadcrumbs items={breadcrumbItems} />
+
+      <Section background="white">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-2xl font-bold text-brand-purple mb-4">
+            Three Integrated Programs. One Transformative Mission.
+          </h2>
+          <p className="text-lg text-brand-gray">
+            Park City Initiative operates three cornerstone programs that work together
+            to address immediate needs while building long-term resilience and opportunity
+            in Bridgeport families and neighborhoods. Each program is designed to complement
+            the others, creating a holistic approach to community transformation.
+          </p>
+        </div>
+      </Section>
 
       {programs.map((program, index) => (
         <Section key={program.title} background={index % 2 === 0 ? "white" : "cream"}>
@@ -90,9 +122,19 @@ export default function ProgramsPage() {
                 {program.title}
               </h2>
               <p className="mt-4 text-brand-gray">{program.description}</p>
-              <div className="mt-6">
+
+              <div className="mt-6 space-y-2">
+                {program.details.map((detail) => (
+                  <div key={detail} className="flex items-start gap-3">
+                    <span className="mt-1.5 inline-block h-2 w-2 rounded-full bg-brand-gold flex-shrink-0" />
+                    <p className="text-sm text-brand-charcoal">{detail}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8">
                 <Button href={program.href} variant="primary">
-                  Learn More →
+                  Learn More About {program.title} →
                 </Button>
               </div>
             </div>
