@@ -35,7 +35,8 @@ const tiers = [
 function DonatePanelInner() {
   const searchParams = useSearchParams();
   const initialAmount = searchParams.get("amount");
-  const initialFrequency = searchParams.get("frequency") === "once" ? "once" : "monthly";
+  // Default to MONTHLY, only switch to once if explicitly requested
+  const initialFrequency = searchParams.get("frequency") !== "once" ? "monthly" : "once";
 
   const [selected, setSelected] = useState<number | "custom" | null>(
     initialAmount ? Number(initialAmount) : null
@@ -47,7 +48,7 @@ function DonatePanelInner() {
     <div>
       <div className="flex flex-col items-center gap-3">
         <p className="text-xs font-semibold text-brand-gold">✓ Monthly Giving Has 90%+ Retention</p>
-        <div className="inline-flex rounded-full bg-brand-gray-light p-1 flex-row-reverse">
+        <div className="inline-flex rounded-full bg-brand-gray-light p-1">
           <button
             onClick={() => setFrequency("monthly")}
             className={`rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
