@@ -189,6 +189,13 @@ export default function Navbar() {
               VOLUNTEER
             </Link>
             <Link
+              href="/donate?monthly=true"
+              className="px-4 py-2 text-sm font-semibold text-white border border-brand-gold/60
+                         rounded-md hover:border-brand-gold hover:bg-brand-gold/10 transition-colors"
+            >
+              GIVE MONTHLY
+            </Link>
+            <Link
               href="/donate"
               className="px-4 py-2 text-sm font-semibold text-brand-purple bg-brand-gold
                          rounded-md hover:opacity-90 transition-opacity"
