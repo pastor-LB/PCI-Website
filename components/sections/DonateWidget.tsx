@@ -27,7 +27,6 @@ export default function DonateWidget() {
       <h2 className="text-center font-heading text-3xl font-semibold text-white sm:text-4xl">
         Your Gift Feeds a Family Tonight.
       </h2>
-
       <div className="mt-6 flex justify-center">
         <div className="inline-flex rounded-full bg-white/10 p-1">
           <button
@@ -48,7 +47,6 @@ export default function DonateWidget() {
           </button>
         </div>
       </div>
-
       <div className="mt-10 grid gap-6 sm:grid-cols-3">
         {tiers.map((tier) => (
           <div key={tier.amount} className="rounded-2xl bg-white p-6 text-center shadow-lg">
