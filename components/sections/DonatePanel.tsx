@@ -49,26 +49,24 @@ function DonatePanelInner() {
         <div className="inline-flex rounded-full bg-brand-gray-light p-1">
           <button
             onClick={() => setFrequency("monthly")}
-            className={`rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide ${
-              frequency === "monthly" ? "bg-brand-purple text-white" : "text-brand-charcoal"
+            className={`rounded-full px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
+              frequency === "monthly"
+                ? "bg-brand-gold text-brand-purple-dark shadow-lg scale-105"
+                : "bg-transparent text-brand-charcoal hover:bg-white"
             }`}
           >
             Give Monthly
+            <span className="ml-2 text-xs">⭐ Recommended</span>
           </button>
           <button
             onClick={() => setFrequency("once")}
-            className={`rounded-full px-5 py-2 text-sm font-bold uppercase tracking-wide ${
-              frequency === "once" ? "bg-brand-purple text-white" : "text-brand-charcoal"
+            className={`rounded-full px-6 py-3 text-sm font-bold uppercase tracking-wide transition-all ${
+              frequency === "once" ? "bg-brand-purple text-white" : "text-brand-charcoal hover:bg-white"
             }`}
           >
             Give Once
           </button>
         </div>
-        {frequency === "monthly" && (
-          <p className="text-xs font-semibold text-brand-gold">
-            ✓ Recommended: $25/month feeds a child for a year
-          </p>
-        )}
       </div>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-4">
